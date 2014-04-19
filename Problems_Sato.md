@@ -57,9 +57,7 @@ char型操作
 
 ### 問題
 
-ABCDE
-↓
-DEFGH
+ABCDE → DEFGH
 
 三個ずらす
 
