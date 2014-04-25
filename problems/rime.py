@@ -1,1 +1,0 @@
-python ../rime.py $@
