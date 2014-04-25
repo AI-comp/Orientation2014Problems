@@ -7,3 +7,7 @@
 *.rej
 *.swp
 .DS_Store
+
+.python-version
+
+rime-out
