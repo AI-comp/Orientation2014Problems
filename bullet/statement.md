@@ -8,8 +8,10 @@
 
 ## 入力
 
-    N P
-    T<sub>1</sub> T<sub>2</sub> ... T<sub>N</sub> 
+<pre>
+N P
+T<sub>1</sub> T<sub>2</sub> ... T<sub>N</sub> 
+</pre>
 
 ## 制約
 
