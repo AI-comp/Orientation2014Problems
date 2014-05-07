@@ -12,13 +12,14 @@ class Checker:
     return sys.stdin.readline()
 
   def readInt(self):
-    integer, = map(int, self.matchRegex(r'^(\d+)\n$'))
+    integer, = map(int, self.matchRegex(r'^(-?\d+)$'))
     return integer
 
   def readInts(self, n):
     if n == 1:
       return [self.readInt()]
-    return map(int, self.matchRegex(r'^(?:(\d+) ){%d}(\d+)\n$' % (n - 1)))
+    ints, = self.matchRegex(r'^((?:-?\d+ ){%d}-?\d+)$' % (n - 1))
+    return map(int, ints.split(' '))
 
   def readString(self, length):
     string, = self.matchRegex(r'^(.{%d})$' % (length))
