@@ -11,7 +11,7 @@ def generateFile(index):
     print >>f, 0, 0, 0, 0
 
 def generateTestCase(f):
-  coefficients = [str(random.randrange(MIN, MAX)) for _ in xrange(4)]
+  coefficients = [str(random.randint(MIN, MAX)) for _ in xrange(4)]
   print >>f, ' '.join(coefficients)
 
 def main():

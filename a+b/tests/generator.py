@@ -10,7 +10,7 @@ def generate(index, a, b):
 
 def main():
   for index in xrange(20):
-    generate(index, random.randrange(0, MAX), random.randrange(0, MAX))
+    generate(index, random.randint(0, MAX), random.randint(0, MAX))
  
 if __name__ == '__main__':
   main()
