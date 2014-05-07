@@ -20,10 +20,8 @@ class Checker:
       return [self.readInt()]
     return map(int, self.matchRegex(r'^(?:(\d+) ){%d}(\d+)\n$' % (n - 1)))
 
-  def readString(self, length, validCharacters):
+  def readString(self, length):
     string, = self.matchRegex(r'^(.{%d})$' % (length))
-    for c in string:
-      self.check(c in validCharacters, '{0} is not in valid characters ({1})'.format(c, validCharacters))
     return string
 
   def matchRegex(self, regex):
@@ -42,3 +40,8 @@ class Checker:
   def checkLength(self, list, length, listName = 'list', lengthName = 'length variable'):
     self.check(len(list) == length,
         'Length of {0} = {1} does not match {2} = {3}'.format(listName, len(list), lengthName, length))
+
+  def checkValidCharacter(self, string, validCharacters):
+    for c in string:
+      self.check(c in validCharacters, '{0} is not in valid characters ({1})'.format(c, validCharacters))
+    
