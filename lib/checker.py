@@ -12,19 +12,25 @@ class Checker:
     return sys.stdin.readline()
 
   def readInt(self):
-    integer, = self.matchRegex(r'^(\d+)\n$')
+    integer, = map(int, self.matchRegex(r'^(\d+)\n$'))
     return integer
 
   def readInts(self, n):
     if n == 1:
       return [self.readInt()]
-    return self.matchRegex(r'^(?:(\d+) ){%d}(\d+)\n$' % (n - 1))
+    return map(int, self.matchRegex(r'^(?:(\d+) ){%d}(\d+)\n$' % (n - 1)))
+
+  def readString(self, length, validCharacters):
+    string, = self.matchRegex(r'^(.{%d})$' % (length))
+    for c in string:
+      self.check(c in validCharacters, '{0} is not in valid characters ({1})'.format(c, validCharacters))
+    return string
 
   def matchRegex(self, regex):
     line = self.readLine()
     m = re.match(regex, line)
     self.check(m, 'Does not match with regex:\n%s\n%s' % (line, regex))
-    return map(int, m.groups())
+    return m.groups()
 
   def check(self, predicate, message):
     assert predicate, 'Line %d: %s' % (self.lineNo, message)
