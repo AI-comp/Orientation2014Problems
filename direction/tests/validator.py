@@ -12,7 +12,7 @@ def main():
     a = int(ch.readLine())
     if a == -1:
       break
-    ch.checkRange(a, 0, 316, 'd')
+    ch.checkRange(a, 0, 315, 'd')
     ch.check(a % 45 == 0, 'd is a multiple of 45')
 
 if __name__ == '__main__':
