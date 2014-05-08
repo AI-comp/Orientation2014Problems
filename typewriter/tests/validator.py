@@ -11,15 +11,11 @@ def main():
   ch = Checker()
 
   while True:
-    n = ch.readInt()
-    if n == 0:
+    s = ch.readString()
+    if s == '!':
       break
-    ch.checkRange(n, MIN, N_MAX, 'N')
-    
-    for _ in xrange(n):
-      s = ch.readString()
-      ch.checkValidCharacter(s, string.ascii_uppercase)
-      ch.checkLength(s, n, 'S', 'N')
+    ch.checkValidCharacter(s, '+-.')
+    ch.checkRange(len(s), S_LEN_MIN, S_LEN_MAX, 'length of S')
 
 if __name__ == '__main__':
   main()

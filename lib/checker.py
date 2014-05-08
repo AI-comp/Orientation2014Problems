@@ -21,8 +21,8 @@ class Checker:
     ints, = self.matchRegex(r'^((?:-?\d+ ){%d}-?\d+)$' % (n - 1))
     return map(int, ints.split(' '))
 
-  def readString(self, length):
-    string, = self.matchRegex(r'^(.{%d})$' % (length))
+  def readString(self):
+    string, = self.matchRegex(r'^(\S+)$')
     return string
 
   def matchRegex(self, regex):
