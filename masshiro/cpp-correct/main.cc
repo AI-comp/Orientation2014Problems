@@ -24,11 +24,12 @@ int main() {
         }
         x[n] = 0;
         y[n] = 0;
+    ix[n] = n;
         int ans = 1<<30;
         do {
-            int d = dist(0, 0, x[0], y[0]);
+            int d = dist(0, 0, x[ix[0]], y[ix[0]]);
             for (int i = 0; i < n; i++) {
-                d += dist(x[i], y[i], x[i+1], y[i+1]);
+                d += dist(x[ix[i]], y[ix[i]], x[ix[i+1]], y[ix[i+1]]);
             }
             if (ans > d) {
                 ans = d;
@@ -37,3 +38,4 @@ int main() {
         printf("%d\n", ans);
     }
 }
+

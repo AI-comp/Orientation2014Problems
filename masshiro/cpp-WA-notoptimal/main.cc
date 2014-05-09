@@ -1,16 +1,16 @@
 #include <stdio.h>
-#include <math.h>
+#include <stdlib.h>
 #include <iostream>
 #include <algorithm>
 using namespace std;
 
-double x[10], y[10];
+int x[10], y[10];
 int ix[10];
 
-double dist(double x1, double y1, double x2, double y2) {
-    double x = x1 - x2;
-    double y = y1 - y2;
-    return sqrt(x*x + y*y);
+int dist(int x1, int y1, int x2, int y2) {
+    int x = x1 - x2;
+    int y = y1 - y2;
+    return abs(x) + abs(y);
 }
 
 int main() {
@@ -24,7 +24,7 @@ int main() {
         }
         x[n] = 0;
         y[n] = 0;
-        double ans = 1e100;
+        int ans = 1<<30;
         do {
             int d = dist(0, 0, x[0], y[0]);
             for (int i = 0; i < n; i++) {
@@ -33,7 +33,7 @@ int main() {
             if (ans > d) {
                 ans = d;
             }
-        } while (next_permutation(ix, ix+n));
-        printf("%.3f\n", ans);
+        } while (false);
+        printf("%d\n", ans);
     }
 }
