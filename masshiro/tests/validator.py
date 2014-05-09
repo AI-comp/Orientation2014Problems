@@ -12,14 +12,14 @@ def main():
     n = int(ch.readLine())
     if n == -1:
       break
-    ch.checkRange(n, 1, 5+1, 'n')
+    ch.checkRange(n, 1, 5, 'n')
     ps = set()
     ps.add((0, 0))
     for _ in range(n):
       x, y = [int(w) for w in ch.readLine().strip().split()]
       ch.check((x, y) not in ps, "no dup points")
-      ch.checkRange(x, -50, 50+1, 'x')
-      ch.checkRange(y, -50, 50+1, 'y')
+      ch.checkRange(x, -50, 50, 'x')
+      ch.checkRange(y, -50, 50, 'y')
       ps.add((x, y))
 
 if __name__ == '__main__':
