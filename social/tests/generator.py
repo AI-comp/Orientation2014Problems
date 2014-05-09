@@ -20,7 +20,7 @@ def generateTestCase(f, n, m):
     print >>f, edge[0], edge[1]
 
 def main():
-  for index in xrange(1):
+  for index in xrange(2):
     generateFile(index)
  
 if __name__ == '__main__':
