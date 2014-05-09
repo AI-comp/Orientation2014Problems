@@ -12,9 +12,8 @@ def generateFile(index):
     print >>f, '!'
 
 def generateTestCase(f, length):
-  for _ in xrange(length):
-    s = [random.choice('+-.') for _ in xrange(length)]
-    print >>f, ''.join(s)
+  s = [random.choice('+-.') for _ in xrange(length)]
+  print >>f, ''.join(s)
 
 def main():
   for index in xrange(10):
