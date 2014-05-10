@@ -10,23 +10,27 @@
 1つのデータセットは以下の通り。
 
 <pre>
-n
-x_1 y_1
-x_2 y_2
+N
+x<sub>1</sub> y<sub>1</sub>
+x<sub>2</sub> y<sub>2</sub>
 ...
-x_n y_n
+x<sub>N</sub> y<sub>N</sub>
 </pre>
+
+Nは工事中の交差点の数を表す。
+x<sub>i</sub>、y<sub>i</sub>はi個目の工事中の交差点のX座標、Y座標を表す。
 
 入力の最後は"-1"。
 
 ## 制約
 
 * 0 <= n <= 23
-* 1 <= x_i, y_i <= 5
-* x_i != 1 または y_i != 1
-* x_i != 5 または y_i != 5
-* i != j ならば x_i != x_j または y_i != y_j
+* 1 <= x<sub>i</sub>, y<sub>i</sub> <= 5
+* x<sub>i</sub> != 1 または y<sub>i</sub> != 1
+* x<sub>i</sub> != 5 または y<sub>i</sub> != 5
+* i != j ならば x<sub>i</sub> != x<sub>j</sub> または y<sub>i</sub> != y<sub>j</sub>
 
 ## 出力
 
 それぞれのデータセットに対して、(1, 1)から(5, 5)まで行く経路の数を一行で出力せよ。
+
