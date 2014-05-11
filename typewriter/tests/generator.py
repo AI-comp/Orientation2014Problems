@@ -9,7 +9,7 @@ def generateFile(index):
   with open(filename, 'w') as f:
     for i in xrange(20):
       generateTestCase(f, random.randint(L_MIN, L_MAX))
-    print >>f, '-1'
+    print >>f, 0
 
 def generateTestCase(f, l):
   print >>f, l

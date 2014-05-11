@@ -12,7 +12,7 @@ def main():
 
   while True:
     l = ch.readInt()
-    if l == -1:
+    if l == 0:
       break
     ch.checkRange(l, L_MIN, L_MAX, 'L')
 
