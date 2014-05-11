@@ -17,11 +17,16 @@ def main():
     ch.checkRange(n, MIN, MAX, 'M')
     
     aList = ch.readInts(n)
-    bList = ch.readInts(m)
+    prev = 0
     for a in aList:
       ch.checkRange(a, MIN, MAX, 'A')
+      ch.check(a > prev, 'As should be sorted')
+
+    bList = ch.readInts(m)
+    prev = 0
     for b in bList:
       ch.checkRange(b, MIN, MAX, 'B')
+      ch.check(b > prev, 'Bs should be sorted')
 
 if __name__ == '__main__':
   main()

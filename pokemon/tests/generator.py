@@ -16,8 +16,8 @@ def generateTestCase(f, n, m):
   bCandidates = [str(i) for i in xrange(1, MAX + 1)]
   random.shuffle(aCandidates)
   random.shuffle(bCandidates)
-  print >>f, ' '.join(aCandidates[: n])
-  print >>f, ' '.join(bCandidates[: m])
+  print >>f, ' '.join(sorted(aCandidates[: n]))
+  print >>f, ' '.join(sorted(bCandidates[: m]))
 
 def main():
   for index in xrange(10):
