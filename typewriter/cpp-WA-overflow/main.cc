@@ -4,8 +4,10 @@
 using namespace std;
 
 int main() {
-  string s;
-  while(cin >> s, s != "!") {
+  int l;
+  while(cin >> l, l != -1) {
+    string s;
+    cin >> s;
     string ans;
     char c = 'a';
     for (int i = 0; i < s.size(); i++) {

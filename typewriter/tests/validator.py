@@ -11,11 +11,14 @@ def main():
   ch = Checker()
 
   while True:
-    s = ch.readString()
-    if s == '!':
+    l = ch.readInt()
+    if l == -1:
       break
+    ch.checkRange(l, L_MIN, L_MAX, 'L')
+
+    s = ch.readString()
     ch.checkValidCharacter(s, '+-.')
-    ch.checkRange(len(s), S_LEN_MIN, S_LEN_MAX, 'length of S')
+    ch.checkRange(len(s), l, l, 'length of S')
 
 if __name__ == '__main__':
   main()

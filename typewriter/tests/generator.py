@@ -8,11 +8,12 @@ def generateFile(index):
   filename = '50-random%02d.in' % index
   with open(filename, 'w') as f:
     for i in xrange(20):
-      generateTestCase(f, random.randint(S_LEN_MIN, S_LEN_MAX))
-    print >>f, '!'
+      generateTestCase(f, random.randint(L_MIN, L_MAX))
+    print >>f, '-1'
 
-def generateTestCase(f, length):
-  s = [random.choice('+-.') for _ in xrange(length)]
+def generateTestCase(f, l):
+  print >>f, l
+  s = [random.choice('+-.') for _ in xrange(l)]
   print >>f, ''.join(s)
 
 def main():

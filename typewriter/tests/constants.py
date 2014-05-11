@@ -1,5 +1,5 @@
 #!/usr/bin/python2
 
-S_LEN_MIN = 1
-S_LEN_MAX = 100
+L_MIN = 1
+L_MAX = 100
 
