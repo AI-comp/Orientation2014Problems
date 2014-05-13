@@ -16,7 +16,7 @@ def main():
     ps = []
     for _ in range(n):
       x, y = [int(w) for w in ch.readLine().strip().split()]
-      ch.check((x, y) not in ps, "no dup points")
+      ch.check((x, y) not in ps, "no dup points: (%d, %d)" % (x, y))
       ch.checkRange(x, -500, 500, 'x')
       ch.checkRange(y, -500, 500, 'y')
       ps.append((x, y))
