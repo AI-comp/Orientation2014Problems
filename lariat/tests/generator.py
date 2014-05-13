@@ -12,7 +12,8 @@ def generateFile(index):
 
 def generateTestCase(f, r, n):
   print >>f, r, n
-  xs = [str(random.randint(X_MIN, X_MAX)) for _ in xrange(n)]
+  xs = [random.randint(X_MIN, X_MAX) for _ in xrange(n)]
+  xs = [str(x) for x in sorted(xs)]
   print >>f, ' '.join(xs)
 
 def main():

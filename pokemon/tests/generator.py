@@ -12,12 +12,14 @@ def generateFile(index):
 
 def generateTestCase(f, n, m):
   print >>f, n, m
-  aCandidates = [str(i) for i in xrange(1, MAX + 1)]
-  bCandidates = [str(i) for i in xrange(1, MAX + 1)]
+  aCandidates = [i for i in xrange(1, MAX + 1)]
+  bCandidates = [i for i in xrange(1, MAX + 1)]
   random.shuffle(aCandidates)
   random.shuffle(bCandidates)
-  print >>f, ' '.join(sorted(aCandidates[: n]))
-  print >>f, ' '.join(sorted(bCandidates[: m]))
+  aList = [str(a) for a in sorted(aCandidates[: n])]
+  bList = [str(b) for b in sorted(bCandidates[: m])]
+  print >>f, ' '.join(aList)
+  print >>f, ' '.join(bList)
 
 def main():
   for index in xrange(10):

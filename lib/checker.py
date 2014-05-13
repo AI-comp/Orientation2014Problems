@@ -46,3 +46,8 @@ class Checker:
     for c in string:
       self.check(c in validCharacters, '{0} is not in valid characters ({1})'.format(c, validCharacters))
     
+  def checkSorted(self, list, listName = 'list'):
+    self.check(list == sorted(list), '{0} should be sorted:\n{1}'.format(listName, list))
+
+  def checkUnique(self, list, listName = 'list'):
+    self.check(len(list) == len(set(list)), '{0} should not have duplicated elements:\n{1}'.format(listName, list))

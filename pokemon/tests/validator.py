@@ -16,17 +16,13 @@ def main():
     ch.checkRange(n, MIN, MAX, 'N')
     ch.checkRange(n, MIN, MAX, 'M')
     
-    aList = ch.readInts(n)
-    prev = 0
-    for a in aList:
-      ch.checkRange(a, MIN, MAX, 'A')
-      ch.check(a > prev, 'As should be sorted')
-
-    bList = ch.readInts(m)
-    prev = 0
-    for b in bList:
-      ch.checkRange(b, MIN, MAX, 'B')
-      ch.check(b > prev, 'Bs should be sorted')
+    for varName in ['A', 'B']:
+      length = {'A': n, 'B': m}[varName]
+      lst = ch.readInts(length)
+      ch.checkSorted(lst, varName + 's')
+      ch.checkUnique(lst, varName + 's')
+      for elem in lst:
+        ch.checkRange(elem, MIN, MAX, varName)
 
 if __name__ == '__main__':
   main()

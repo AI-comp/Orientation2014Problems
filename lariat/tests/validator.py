@@ -17,6 +17,7 @@ def main():
     ch.checkRange(n, N_MIN, N_MAX, 'N')
     
     xs = ch.readInts(n)
+    ch.checkSorted(xs, 'Xs')
     for x in xs:
       ch.checkRange(x, X_MIN, X_MAX, 'X')
 
