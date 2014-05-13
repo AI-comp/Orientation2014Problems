@@ -1,8 +1,11 @@
 Problem Statement (日本語)
 --
-北からの偏角dが与えられる。
+北からの反時計回りの偏角dが与えられる。
 dの表す方角(N,NW,W,SW,S,SE,E,NE)を答えよ。
-なお、偏角dが45度のときNWとなることに注意せよ。
+なお、下図のように、偏角dが45度のときNWとなることに注意せよ。
+<center>
+図: 偏角45度の例 (compass_with_d.png)
+</center>
 
 Input (日本語)
 --
