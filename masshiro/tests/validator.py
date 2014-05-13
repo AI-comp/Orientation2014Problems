@@ -10,7 +10,7 @@ def main():
 
   while True:
     n = int(ch.readLine())
-    if n == -1:
+    if n == 0:
       break
     ch.checkRange(n, 1, 5, 'n')
     ps = set()

@@ -6,7 +6,7 @@ using namespace std;
 
 int main(){
   int n;
-  while(cin>>n,n!=-1){
+  while(cin>>n,n){
     int farthest=0;
     REP(i,n){
       int x,y;

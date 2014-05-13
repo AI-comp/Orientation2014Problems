@@ -37,7 +37,7 @@ int dfs(int cur_x,int cur_y,vi &used,vi &x,vi &y){
 
 int main(){
   int n;
-  while(cin>>n,n!=-1){
+  while(cin>>n,n){
     vi x(n),y(n);
     REP(i,n){
       cin>>x[i]>>y[i];

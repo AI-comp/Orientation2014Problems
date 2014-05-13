@@ -14,7 +14,7 @@ int main() {
     int n;
     for (;;) {
         cin >> n;
-        if (n == -1) return 0;
+        if (n == 0) return 0;
         double maxd = 0;
         for (int i = 0; i < n; i++) {
             int x, y;

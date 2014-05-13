@@ -19,7 +19,7 @@ def generate(index):
           continue
         print >>f, "%d %d" % (x, y)
         ps.add((x, y))
-    print >>f, -1
+    print >>f, 0
 
 def main():
   for index in xrange(5):

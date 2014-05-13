@@ -17,7 +17,7 @@ int main() {
     int n;
     for (;;) {
         cin >> n;
-        if (n == -1) return 0;
+        if (n == 0) return 0;
         for (int i = 0; i < n; i++) {
             cin >> x[i] >> y[i];
             ix[i] = i;
