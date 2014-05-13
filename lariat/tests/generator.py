@@ -12,7 +12,11 @@ def generateFile(index):
 
 def generateTestCase(f, r, n):
   print >>f, r, n
-  xs = [random.randint(X_MIN, X_MAX) for _ in xrange(n)]
+  xs = []
+  while len(xs) < n:
+    x = random.randint(X_MIN, X_MAX)
+    if not x in xs:
+      xs.append(x)
   xs = [str(x) for x in sorted(xs)]
   print >>f, ' '.join(xs)
 
