@@ -24,9 +24,8 @@ A<sub>M</sub> B<sub>M</sub>
 1行目に、W-NETに登録されているIDの数N、フォロー／フォロワーの関係の個数Mが与えられる (2 <= N <= 1000, 1 <= M <= 10000)。
 
 続くM行に、フォロー／フォロワーの関係が与えられる。
-A<sub>i</sub> B<sub>i</sub> は、IDがA<sub>i</sub>のユーザが、 IDがB<sub>i</sub>のユーザをフォローしていることを表す。
-A<sub>i</sub> および B<sub>i</sub> は、1 <= A<sub>i</sub> <= N, 1 <= B<sub>i</sub> <= N を満たす。
-また、 A<sub>i</sub> ≠ B<sub>i</sub> であり、さらに、同じ (A<sub>i</sub>, B<sub>i</sub>) の組は 2回以上登場しない。
+A<sub>i</sub> B<sub>i</sub> は、IDがA<sub>i</sub>のユーザが、 IDがB<sub>i</sub>のユーザをフォローしていることを表す (1 <= A<sub>i</sub> <= N, 1 <= B<sub>i</sub> <= N)。
+A<sub>i</sub> ≠ B<sub>i</sub> であり、さらに、同じ (A<sub>i</sub>, B<sub>i</sub>) の組は 2回以上登場しない。
 
 入力の終了は、"0 0"と書かれた1行によって示される。
 
