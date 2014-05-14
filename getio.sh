@@ -14,16 +14,16 @@ do
   cp "$dir/statement.md" $statement
 
   echo "
-Smaple Test Case
+例
 --
-### Input
+### 入力
 \`\`\`" >> $statement
 
   cat "$dir/rime-out/tests/00-sample1.in" >> $statement
 
   echo "\`\`\`
 
-### Output
+### 出力
 \`\`\`" >> $statement
 
   cat "$dir/rime-out/tests/00-sample1.diff" >> $statement
