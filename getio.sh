@@ -1,7 +1,7 @@
 rm -rf tmp
 mkdir tmp
 
-for dir in bullet diagonal direction earthquake expression goban hisha lariat masshiro maximum pokemon primes robot social temperature typewriter
+for dir in a+b bullet diagonal direction earthquake expression goban hisha lariat masshiro maximum pokemon primes robot social temperature typewriter
 do
   mkdir "tmp/$dir"
 
@@ -14,7 +14,7 @@ do
   cp "$dir/statement.md" $statement
 
   echo "
-例
+入出力の例
 --
 ### 入力
 \`\`\`" >> $statement
