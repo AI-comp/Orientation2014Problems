@@ -9,6 +9,9 @@ do
   cp "$dir/rime-out/tests/05-small.diff" "tmp/$dir/small-out.txt"
   cp "$dir/rime-out/tests/50-random00.in" "tmp/$dir/large-in.txt"
   cp "$dir/rime-out/tests/50-random00.diff" "tmp/$dir/large-out.txt"
+  if [ -d "$dir/images" ]; then
+    cp "$dir/images" "tmp/$dir" -R
+  fi
 
   statement="tmp/$dir/statement.txt"
   cp "$dir/statement.md" $statement
