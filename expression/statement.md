@@ -29,6 +29,6 @@ ANSWER<sub>4</sub>
 ANSWER<sub>5</sub>
 </pre>
 
-ANSWER<sub>i</sub>はx = iに対する式の値である。
+ANSWER<sub>i</sub> は x = i に対する式の値である。
 
 なお、入力の終了を示す"0 0 0 0"に対しては何も出力しないこと。
