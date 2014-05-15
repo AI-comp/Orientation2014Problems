@@ -18,15 +18,17 @@ do
 
   echo "
 入出力の例
+==
+入力
 --
-### 入力
 \`\`\`" >> $statement
 
   cat "$dir/rime-out/tests/00-sample1.in" >> $statement
 
   echo "\`\`\`
 
-### 出力
+出力
+--
 \`\`\`" >> $statement
 
   cat "$dir/rime-out/tests/00-sample1.diff" >> $statement
