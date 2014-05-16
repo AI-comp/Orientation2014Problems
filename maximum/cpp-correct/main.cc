@@ -6,7 +6,7 @@ int main() {
   int n;
   while(cin >> n, n) {
     int ans = 0;
-    int as[100];
+    int as[500];
     for (int i = 0; i < n; i++) {
       cin >> as[i];
     }
