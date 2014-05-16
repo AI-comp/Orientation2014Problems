@@ -2,7 +2,7 @@
 ==
 数列a<sub>i</sub> (i=1,2,...,N)が与えらる。
 数列の中で、左右の要素より大きい要素 (すなわち、a<sub>i-1</sub> < a<sub>i</sub> かつ a<sub>i</sub> > a<sub>i+1</sub>を満たすa<sub>i</sub>) の個数を求めよ。
-両端(a<sub>0</sub>, a<sub>N-1</sub>)は答えに含めない。
+両端(a<sub>1</sub>, a<sub>N</sub>)は答えに含めない。
 
 入力
 ==
