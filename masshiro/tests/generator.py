@@ -5,7 +5,7 @@ import random
 def generate(index):
   filename = '50-random%02d.in' % index
   with open(filename, 'w') as f:
-    for _ in range(20):
+    for _ in range(40):
       n = random.randrange(1, 6)
       print >>f, n
       ps = set()
