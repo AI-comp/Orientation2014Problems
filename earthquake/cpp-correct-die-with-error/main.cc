@@ -1,4 +1,4 @@
-/* This AI will die with error if the input is evil.
+/* This solution will die with error if the input is evil.
  * Try to keep the input kind.
  */
 
