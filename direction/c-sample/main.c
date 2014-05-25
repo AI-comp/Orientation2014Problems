@@ -1,17 +1,13 @@
 #include <stdio.h>
 
-int main(void)
-{
+int main(void) {
     int d;
-    while (1)
-    {
+    while (1) {
         scanf("%d", &d);
-        if (d == -1)
-        {
+        if (d == -1) {
             break;
         }
-        switch (d)
-        {
+        switch (d) {
         case 0:
             printf("N\n");
             break;
