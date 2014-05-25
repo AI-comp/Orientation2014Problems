@@ -8,8 +8,11 @@
 *.swp
 .DS_Store
 ~$$*.~vsdx
+*.class
+a.out
 
 .python-version
 
 rime-out
 tmp
+
