@@ -1,8 +1,8 @@
 #include <stdio.h>
 
 int main(void){
-    int n, p;
     while (1) {
+        int n, p;
         scanf("%d %d", &n, &p);
         if (n == 0 && p == 0) {
             break;
