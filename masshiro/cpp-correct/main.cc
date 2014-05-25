@@ -24,7 +24,7 @@ int main() {
         }
         x[n] = 0;
         y[n] = 0;
-    ix[n] = n;
+        ix[n] = n;
         int ans = 1<<30;
         do {
             int d = dist(0, 0, x[ix[0]], y[ix[0]]);
