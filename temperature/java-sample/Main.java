@@ -3,15 +3,15 @@ import java.util.Arrays;
 
 public class Main {
   public static void main(String[] args) {
-    Scanner in = new Scanner(System.in);
+    Scanner scanner = new Scanner(System.in);
     while (true) {
-      int N = in.nextInt();
+      int N = scanner.nextInt();
       if (N == 0) {
         break;
       }
       int[] t = new int[N];
       for (int i = 0; i < N; i++) {
-        t[i] = in.nextInt();
+        t[i] = scanner.nextInt();
       }
       Arrays.sort(t);
       int answer = 0;
