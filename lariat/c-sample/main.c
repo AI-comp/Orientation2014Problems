@@ -16,7 +16,7 @@ int main(void) {
 
         int answer = 0;
         int cx;
-        for (cx = -r; cx <= 1000 + r; cx++) {
+        for (cx = 0; cx <= 1000; cx++) {
             int count = 0;
             for (i = 0; i < n; i++) {
                 if (cx - r <= x[i] && x[i] <= cx + r) {
